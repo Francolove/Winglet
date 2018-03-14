@@ -18,7 +18,6 @@ function V = induced_ring_speed(ring,gamma,point)
 %   r1 = point-line1(1,1,:);
 %   r2 = point-line1(1,2,:);
   for i = 1:4
-      
       line = line_v(i,:,:);
 %       r1 = point-line_v(i,2,:);
 %       r2 = point-line_v(i,1,:);
@@ -34,4 +33,5 @@ function V = induced_ring_speed(ring,gamma,point)
           V = V + induced_line_speed(line,gamma,point);
       end
   end
+  
 end

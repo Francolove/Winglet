@@ -37,5 +37,5 @@ plot3(p_controllo(:,:,1),p_controllo(:,:,2),p_controllo(:,:,3),'r*')
 % quiver3(p_controllo(:,:,1),p_controllo(:,:,2),p_controllo(:,:,3),N(:,:,1),N(:,:,2),N(:,:,3),'k')
 % quiver3(p_controllo(:,:,1),p_controllo(:,:,2),p_controllo(:,:,3),T(:,:,1),T(:,:,2),T(:,:,3),'r')
 %%
-V = induced_ring_speed(W(1:2,1:2,:),1,p_controllo(1,1,:));
-V_prova = induced_ring_speed(W(1,1:2,:),1,p_controllo(1,1,:));
+% V = induced_ring_speed(W(1:2,1:2,:),1,p_controllo;
+V_prova = induced_ring_speed(W(1:2,1:2,:),1,[W(1,1,:) W(1,2,:)]);

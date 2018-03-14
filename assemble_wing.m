@@ -10,4 +10,6 @@ function  assembled_wing = assemble_wing(wing1,wing2)
             return
     end
     assembled_wing = [wing1 wing2(:,2:end,:)];
+    %prova
+    
 end

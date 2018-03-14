@@ -3,7 +3,7 @@ naca = 4412;
 wing_root = .6;
 wing_tip = .2;
 wing_span = 1;
-n_chord = 4;
+n_chord = 10;
 n_span = 30;
 wing_sweep = deg2rad(30);
 wing_twist = deg2rad(30);
@@ -36,3 +36,5 @@ plot3(p_controllo(:,:,1),p_controllo(:,:,2),p_controllo(:,:,3),'r*')
 [N,T] = versori(W);
 % quiver3(p_controllo(:,:,1),p_controllo(:,:,2),p_controllo(:,:,3),N(:,:,1),N(:,:,2),N(:,:,3),'k')
 % quiver3(p_controllo(:,:,1),p_controllo(:,:,2),p_controllo(:,:,3),T(:,:,1),T(:,:,2),T(:,:,3),'r')
+%%
+V = induced_speed(W(1:2,1:2,:),1,p_controllo(1,1,:));

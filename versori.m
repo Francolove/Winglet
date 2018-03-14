@@ -9,4 +9,5 @@ function [N,T] = versori(wing)
             N(i,j,:) = cross(v13,v24)/norm(cross(v13,v24));
         end
     end
+    T=0;
 end
